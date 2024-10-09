@@ -1,0 +1,16 @@
+(defpoll minute :interval "5s"
+    "date '+%M'")
+(defpoll hour :interval "5s"
+        "date '+%I'")
+(defpoll period :interval "5s"
+    "date '+%p'")
+(defpoll date :interval "5s"
+    "date '+%B %d'")
+
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspaces")
+(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace")
+(deflisten window :initial "..." "sh ~/.config/eww/scripts/get-window-title")
+
+
+(defpoll profile :interval "1s" "~/.config/eww/scripts/profile.sh")
+

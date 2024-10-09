@@ -1,0 +1,12 @@
+(defwindow controlcenter
+  :monitor 0
+  :class "controlcenter"
+  :geometry (geometry :x "10px"
+                      :y "10px"
+                      :width "280px"
+                      :height "92%"
+                      :anchor "top right"
+            )
+  :stacking "fg"
+  (controlcenter)
+)

@@ -1,0 +1,20 @@
+;; Variables
+(include "./src/yuck/variables.yuck")
+
+;; Bar
+(include "./src/yuck/bar/_widgets.yuck")
+(include "./src/yuck/bar/_windows.yuck")
+
+;; Control Center
+(include "./src/yuck/controlcenter/_widgets.yuck")
+(include "./src/yuck/controlcenter/_windows.yuck")
+
+;; Notification Center
+
+;; Power Menu
+
+;; Volume Slider
+
+;; Screenshots
+
+;; 
