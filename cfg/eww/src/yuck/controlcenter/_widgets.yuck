@@ -19,10 +19,15 @@
 
 
 (defwidget controlcenter []
+  (revealer
+  :transition "slideleft"
+  :reveal "controlcenter"
+  :duration 500
   (box 
     :class ""
     :spacing 14
     :orientation "v"
     (user)
   )
+ )
 )

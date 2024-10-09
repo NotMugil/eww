@@ -3,8 +3,8 @@ $dim-fg: #b8b8b8;
 $bg: #e4e5e7;
 $dim-bg: #bbbbbb;
 
-$accent: #e7c26c;
-$accent-dim: #ffdf98;
+$accent: {{colors.primary_fixed_dim.default.hex}};
+$accent-secondary: {{colors.secondary_fixed_dim.default.rgba}};
 
 $red: #ee6a70;
 $blue: #7ba5dd;

@@ -1,0 +1,29 @@
+[config]
+reload_apps = true
+set_wallpaper = true
+wallpaper_tool = 'Swww'
+prefix = '@'
+swww_options =	 [
+    "--transition-type",
+    "randowm",
+]
+
+[config.reload_apps_list]
+alacritty = true
+gtk_theme = true
+dunst = true
+eww = true
+
+[templates.term]
+input_path = '~/.config/matugen/templates/alacritty.toml'
+output_path = '~/.config/alacritty/colors.toml'
+
+[templates.eww_Light]
+input_path = '~/.config/matugen/templates/eww-light.scss'
+output_path = '~/.config/eww/colors/_Light.scss'
+
+[templates.eww_Dark]
+input_path = '~/.config/matugen/templates/eww-dark.scss'
+output_path = '~/.config/eww/colors/_Dark.scss'
+
+

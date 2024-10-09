@@ -61,7 +61,7 @@ export PATH=${PATH}:~/.local/scripts:~/.local/bin:~/.local/share/cargo/bin
 export PATH=$PATH:/home/rei/.spicetify
 
 # Set sudo password prompt
-export SUDO_PROMPT='[] Enter Password: '
+export SUDO_PROMPT='[ ] Enter Password: '
 
 # Set default editor
 export EDITOR='nano'
