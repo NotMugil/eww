@@ -1,0 +1,79 @@
+#!/bin/bash
+
+##################
+### SETUP VARS ###
+##################
+
+THEME_FILE="$HOME/.config/hypr/.current-theme"
+WAL_DIR="$HOME/.wallpapers"
+CONF_DIR="$HOME/.config"
+ALACRITTY_DIR="$CONF_DIR/alacritty"
+EWW_DIR="$CONF_DIR/eww"
+
+############################
+### Light Theme Function ###
+############################
+
+set_light_theme() {
+    gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3"
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'    
+
+    ln -sf "$EWW_DIR/colors/_Light.scss" "$EWW_DIR/colors/_matugen.scss"
+    ln -sf "$ALACRITTY_DIR/colors/Light.toml" "$ALACRITTY_DIR/colors/theme.toml"    
+
+    setWal "$WAL_DIR/light/default.jpg"
+    echo "light" > "$THEME_FILE"
+    echo "Theme set to light"
+}
+
+###########################
+### Dark Theme Function ###
+###########################
+set_dark_theme() {
+    gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"
+    gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+    
+    ln -sf "$EWW_DIR/colors/_Dark.scss" "$EWW_DIR/colors/_matugen.scss"
+    ln -sf "$ALACRITTY_DIR/colors/Dark.toml" "$ALACRITTY_DIR/colors/theme.toml"
+   
+    setWal "$WAL_DIR/dark/default.jpg"
+    echo "dark" > "$THEME_FILE" 
+    echo "Theme set to dark"
+}
+
+
+
+get_current_theme() {
+    if [ -f "$THEME_FILE" ]; then
+        cat "$THEME_FILE"
+    else
+        echo "light"  # Default to light if no theme file exists
+    fi
+}
+
+toggle_theme() {
+    current_theme=$(get_current_theme)
+    
+    if [ "$current_theme" = "light" ]; then
+        set_dark_theme
+    else
+        set_light_theme
+    fi
+}
+
+# Main script logic
+case "$1" in
+    "light")
+        set_light_theme
+        ;;
+    "dark")
+        set_dark_theme
+        ;;
+    "get")
+        get_current_theme
+        ;;
+    *)
+        toggle_theme
+        ;;
+esac

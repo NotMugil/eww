@@ -4,8 +4,8 @@ eww=/home/$USER/.local/bin/eww
 
 if [ -f "$LOCK" ]; then
     rm -rf "$LOCK"
-    $eww close controlcenter
+    $eww close notification
 else 
     touch "$LOCK"
-    $eww open controlcenter
+    $eww open notification
 fi

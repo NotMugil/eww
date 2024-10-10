@@ -10,6 +10,8 @@
 (include "./src/yuck/controlcenter/_windows.yuck")
 
 ;; Notification Center
+(include "./src/yuck/notifications/_widgets.yuck")
+(include "./src/yuck/notifications/_windows.yuck")
 
 ;; Power Menu
 

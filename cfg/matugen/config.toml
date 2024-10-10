@@ -16,7 +16,7 @@ eww = true
 
 [templates.term]
 input_path = '~/.config/matugen/templates/alacritty.toml'
-output_path = '~/.config/alacritty/colors.toml'
+output_path = '~/.config/alacritty/colors/colors.toml'
 
 [templates.eww_Light]
 input_path = '~/.config/matugen/templates/eww-light.scss'

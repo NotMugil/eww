@@ -1,0 +1,6 @@
+
+[colors.primary]
+background = "#17181C"
+foreground = "#cdcfd3"
+dim_foreground = "#8c8fa1"
+bright_foreground = "#4c4f69"

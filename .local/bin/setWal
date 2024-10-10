@@ -1,0 +1,4 @@
+#!/bin/bash
+
+swww img "$1" --transition-type any --transition-duration 2 --invert-y  && 
+matugen image "$1" && notify-send -i "$1" "Wallpaper Changed" -a "Wallpaper"

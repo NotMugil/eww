@@ -1,14 +1,14 @@
-$fg: #615a5a;
-$dim-fg: #b8b8b8;
-$bg: #e4e5e7;
-$dim-bg: #bbbbbb;
+$fg: rgba(228, 229, 231, 1);
+$dim-fg: rgba(176, 177, 180, 0.5);
+$bg: rgba(23, 24, 28, 0.9);
+$dim-bg: rgba(38, 39, 43, 0.7);
 
 $accent: {{colors.primary_fixed.default.hex}};
 $accent-secondary: {{colors.secondary_fixed_dim.default.rgba}};
 
-$red: #ee6a70;
-$blue: #7ba5dd;
-$blue-desaturated: #6791c9;
-$magenta: #cb92f2;
-$green: #96d6b0;
-$yellow: #ffb29b;
+$red: rgba(238, 106, 112, 1);
+$blue: rgba(123, 165, 221, 1);
+$blue-desaturated: rgba(103, 145, 201, 1);
+$magenta: rgba(203, 146, 242, 1);
+$green: rgba(150, 214, 176, 1);
+$yellow: rgba(255, 178, 155, 1);

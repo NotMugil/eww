@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/colors.toml"]
+import = ["~/.config/alacritty/colors/colors.toml","~/.config/alacritty/colors/theme.toml"]
 live_config_reload = true
 
 [font]
@@ -6,15 +6,9 @@ size = 9
 normal = { family = "SpaceMono Nerd Font", style= "Regular" }
 
 [window]
-opacity = 0.9
+opacity = 0.89
 padding = { x = 20, y = 20 }
 dynamic_padding = true
-
-[colors.primary]
-background = "#ffffff"
-foreground = "#4c4f69"
-dim_foreground = "#8c8fa1"
-bright_foreground = "#4c4f69"
 
 [colors.normal]
 black = "#bcc0cc"

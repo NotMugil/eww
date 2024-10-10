@@ -1,0 +1,35 @@
+[colors.normal]
+blue = '#85d2e8'
+
+[colors.selection]
+text = '#0f1416'
+background = '#85d2e8'
+ 
+[colors.cursor]
+text = '#dee3e6'
+cursor = '#bfc8cb' 
+ 
+[colors.vi_mode_cursor]
+text = '#0f1416'
+cursor = '#85d2e8' 
+ 
+[colors.search.matches]
+foreground = '#40484b' 
+background = '#c0c4eb' 
+ 
+[colors.search.focused_match]
+foreground = '#40484b' 
+background = '#85d2e8' 
+ 
+[colors.footer_bar]
+foreground = '#40484b' 
+background = '#dee3e6' 
+ 
+[colors.hints.start]
+foreground = '#40484b' 
+background = '#b2cbd3' 
+ 
+[colors.hints.end]
+foreground = '#40484b' 
+background = '#b2cbd3' 
+ 
