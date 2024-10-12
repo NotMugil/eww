@@ -14,6 +14,16 @@
 
 (defpoll profile :interval "1s" "~/.config/eww/scripts/profile.sh")
 
+;;Calendar variables
+(defpoll day :interval "60s" "date '+%a'")
+(defpoll month :interval "60s" "date '+%b'")
+(defpoll calendarDay :interval "60s" "date '+%d'")
+(defpoll calendarMonth :interval "60s" "date '+%m'")
+(defpoll calendarYear :interval "60s" "date '+%Y'")
+(defpoll hr	:interval "10s"	"date '+%H'")
+(defpoll min	:interval "2s"	"date '+%M'")
+(defvar revealTime false)
+
 ;;Notification variables
 (deflisten notificationsCards "scripts/logger.zsh subscribe")
 (defpoll notificationsCrits :interval "1s" "scripts/logger.zsh crits")

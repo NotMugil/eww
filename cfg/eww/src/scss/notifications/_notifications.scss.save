@@ -1,7 +1,3 @@
-.full-noti-box {
-  background-color: $element-bg;
-}
-
 .notification-layout-box {
   padding: 20px;
   background-color: $element-bg;
@@ -15,24 +11,25 @@
 }
 
 .notification-headers-clear {
+  
   border-radius: 6px;
-  padding: 10px 15px 10px 12px;
+  padding: 10px;
   font-size: 20px;
-}
+
+E}
 
 .notification-card-header-box {
-  background-color: $element-light;
+  background-color: $element-med;
   color: $fg;
   border-radius: 10px 10px 0px 0px;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px;
+  padding-left: 20px;
 }
 
 .notification-app-name {
-  margin-left: 10px;
-  font-weight: 700;
   font-size: 10pt;
 }
 
@@ -41,17 +38,12 @@
 }
 
 .notification-card-box {
-  background-color: $element-med;
   border-radius: 0px 0px 10px 10px;
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px;
   font-size: 9pt;
-}
-
-.notification-image {
-  margin: 10px;
 }
 
 .notification-summary {
@@ -68,37 +60,4 @@
 
 .notification-card-body {
   margin: 10px;
-}
-
-.cal-cal{
-  border: 0px;
-  font-size: 10pt;
-}
-
-.cal-container {
-  margin: 10px 20px;
-  background-color: $element-bg;
-  padding: 5px;
-  border-radius: 6px;
-}
-
-.cal-date {
-  color: $fg;
-  font-size: 10pt;
-  margin: 10px;
-}
-
-.cal-cal {
-  color: $fg;
-  background-color: $element-bg;
-}
-
-.cal-cal:indeterminate {
-  color: $dim-fg;
-}
-
-.cal-cal:selected {
-  background-color: $fg;
-  color: $bg;
-  border-radius: 6px;
 }

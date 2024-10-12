@@ -1,5 +1,5 @@
 [colors.normal]
-blue = '{{colors.primary.default.hex}}'
+cyan = '{{colors.primary.default.hex}}'
 
 [colors.selection]
 text = '{{colors.background.default.hex}}'
