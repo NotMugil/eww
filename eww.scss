@@ -3,3 +3,8 @@
 
 /* Bar */
 @import "./bar/bar";
+
+* {
+    all: unset;
+    background-color: transparent;
+}

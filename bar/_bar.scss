@@ -13,3 +13,62 @@ window {
 
 .right {
 }
+
+.menu {
+    margin: 0.5rem;
+    background-color: $muted;
+    border-radius: 0.25rem;
+
+    :hover {
+        background-color: $hover;
+        border-radius: 0.25rem;
+    }
+}
+
+.battery-top {
+    font-size: 7pt;
+    color: $fg-muted;
+}
+
+.battery-bar {
+    color: $hover;
+    font-size: 7pt;
+    margin: 0.3rem 0.1rem 0.3rem 0.4rem;
+    padding: 0px 1rem;
+    border: 1px solid $fg-muted;
+    border-radius: 0.25rem;
+}
+
+.button {
+    font-size: 11pt;
+    padding: 0.4rem 0.8rem;
+    background-color: transparent;
+}
+
+.controlcenter {
+    margin: 0.5rem;
+    padding: 0.25rem 0.2rem 0.25rem 0.6rem;
+    background-color: $muted;
+    border-radius: 0.25rem;
+
+    :hover {
+        background-color: $hover;
+        border-radius: 0.25rem;
+    }
+}
+
+.cc-button {
+    font-size: 11pt;
+    padding: 0 0.5rem;
+}
+
+.controls {
+    margin: 0.4rem;
+    padding: 0px 0.4rem;
+    background-color: $muted;
+    border-radius: 0.25rem;
+}
+
+.powerbutton {
+    color: $red;
+}

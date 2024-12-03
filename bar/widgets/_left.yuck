@@ -1,3 +1,7 @@
+(defwidget menu []
+  (box :class "menu" :orientation "h" :space-evenly false :spacing 0 :halign "start" :valign "center"
+    (button :onclick "" :class "button menubutton"
+    (label :text "󱗼"))))
+
 (defwidget left []
-  (box
-    (label :text "left" :class "left")))
+  (menu))
