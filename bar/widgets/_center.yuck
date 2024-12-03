@@ -1,0 +1,3 @@
+(defwidget center []
+  (box
+    (label :text "center" :class "center")))

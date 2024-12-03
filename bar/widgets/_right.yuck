@@ -1,0 +1,3 @@
+(defwidget right []
+  (box
+    (label :text "right" :class "right")))
