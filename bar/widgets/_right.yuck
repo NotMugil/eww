@@ -13,7 +13,7 @@
     (label :text "${network.icon}")))
 
 (defwidget bluetooth []
-   (box :class "cc-button" :style "color: $bluetooth.color};"
+   (box :class "cc-button" :style "color: ${bluetooth.color};"
     (button :onclick "" :class ""
     (label :text "${bluetooth.icon}"))))
 
@@ -34,6 +34,9 @@
     (button :onclick "" :class "button powerbutton"
     (label :text "󰐥"))))
 
+(defwidget time []
+   (time))
+
 (defwidget clock []
   (box :class "clock" :orientation "h" :space-evenly true :halign "end" :valign "center"
     (time)
@@ -46,6 +49,5 @@
 
 (defwidget right []
   (box :class "" :orientation "h" :space-evenly false :spacing 1 :halign "end" :valign "center"
-    (clock)
     (controlcenter)
     (controls)))

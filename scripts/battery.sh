@@ -15,9 +15,9 @@ getColor() {
     local percentage=$(cat "/sys/class/power_supply/BAT0/capacity")
 
     if [[ $percentage -ge 70 ]]; then
-        echo "#50FA7B"
+        echo "#4ce852"
     elif [[ $percentage -ge 30 ]]; then
-        echo "#F1FA8C"
+        echo "#dce857"
     else
         echo "#ee333c"
     fi

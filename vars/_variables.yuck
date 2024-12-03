@@ -1,3 +1,4 @@
-(defpoll battery :interval "10s" './scripts/battery.sh')
-(defpoll network :interval "10s" `./scripts/network.sh`)
-(defpoll bluetooth :interval "10s" `./scripts/bluetooth.sh`)
+(defpoll battery :interval "2s" './scripts/battery.sh')
+(defpoll network :interval "2s" `./scripts/network.sh`)
+(defpoll bluetooth :interval "2s" `./scripts/bluetooth.sh`)
+(defpoll time :interval "60s" "date '+%B %d, %H:%M'")

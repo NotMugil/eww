@@ -20,7 +20,7 @@ getColor() {
     local device_count=$(echo "$devices" | grep -c "Device")
 
     if [[ $device_count -eq 0 ]]; then
-        echo "#6272A4"
+        echo "#a6a6a6"
     else
         echo "#FFFFFF"
     fi
@@ -46,7 +46,7 @@ main() {
             status="connected"
         fi
     fi
-    
+
     printf '{"status": "%s", "devices": %d, "icon": "%s", "color": "%s"}' \
         "$status" "$device_count" "$icon" "$color"
 }
