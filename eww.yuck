@@ -1,4 +1,4 @@
-;; Import
+;; Common
 (include "./vars/_variables.yuck")
 
 ;; Bar
@@ -6,3 +6,6 @@
 (include "./bar/widgets/_left.yuck")
 (include "./bar/widgets/_right.yuck")
 (include "./bar/_bar.yuck")
+
+;; Calendar
+(include "./calendar/_calendar.yuck")

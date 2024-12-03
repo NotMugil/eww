@@ -66,11 +66,44 @@ window {
 
 .controls {
     margin: 0.4rem;
-    padding: 0px 0.4rem;
+    padding: 0px 0.2rem;
     background-color: $muted;
     border-radius: 0.25rem;
 }
 
 .powerbutton {
     color: $red;
+}
+
+.workspaces {
+    margin: 0.5rem 0rem;
+    border-radius: 0.25rem;
+    background-color: $muted;
+}
+
+.workspace-entry {
+    padding: 0rem 0.2rem;
+}
+
+.workspace-entry.occupied {
+    color: $fg;
+}
+
+.workspace-entry.empty {
+    color: $muted;
+}
+
+.workspace-entry.current {
+    font-weight: 600;
+    color: $red;
+    background-color: $hover;
+}
+
+.workspace-number {
+    padding: 0px 0.8rem;
+}
+
+.outline {
+    padding: 0.4rem;
+    background-color: $bg;
 }
