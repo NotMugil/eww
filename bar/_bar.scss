@@ -16,7 +16,9 @@ window {
 .right {
 }
 
-q    margin: 0.5rem;
+.controlcenter {
+    margin: 0.5rem;
+    padding: 0.25rem 0.2rem 0.25rem 0.6rem;
     background-color: $muted;
     border-radius: 0.25rem;
 
@@ -34,7 +36,7 @@ q    margin: 0.5rem;
 .battery-bar {
     color: $hover;
     font-size: 7pt;
-    margin: 0.3rem 0.1rem 0.3rem 0.4rem;
+    margin: 0.3rem 0rem 0.3rem 0.4rem;
     padding: 0px 1rem;
     border: 1px solid $fg-muted;
     border-radius: 0.25rem;
@@ -46,9 +48,8 @@ q    margin: 0.5rem;
     background-color: transparent;
 }
 
-.controlcenter {
+.menu {
     margin: 0.5rem;
-    padding: 0.25rem 0.2rem 0.25rem 0.6rem;
     background-color: $muted;
     border-radius: 0.25rem;
 
