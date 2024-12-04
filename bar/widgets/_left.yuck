@@ -1,10 +1,10 @@
 (defwidget menu []
+  (eventbox :onclick "" :cursor "pointer"
   (box :class "menu" :orientation "h" :space-evenly false :spacing 0 :halign "start" :valign "center"
-    (button :onclick "" :class "button menubutton"
-    (label :text "󱗼"))))
+    (label :class "button menubutton" :text "󱗼"))))
 
 (defwidget workspaces []
-  (eventbox :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}" :class "workspaces-widget"
+  (eventbox :cursor "pointer"  :onscroll "bash ~/.config/eww/scripts/change-active-workspace {} ${current_workspace}" :class "workspaces-widget"
     (box :class "workspaces" :space-evenly false :spacing 5
       (label :text "${workspaces}${current_workspace}" :visible false)
       (for workspace in workspaces

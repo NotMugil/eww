@@ -82,11 +82,11 @@ window {
 }
 
 .workspace-entry {
-    padding: 0rem 0.2rem;
+    border-radius: 0.25rem;
 }
 
 .workspace-entry.occupied {
-    color: $fg;
+    color: $fg-muted;
 }
 
 .workspace-entry.empty {
@@ -95,7 +95,7 @@ window {
 
 .workspace-entry.current {
     font-weight: 600;
-    color: $red;
+    color: $fg;
     background-color: $hover;
 }
 
@@ -106,4 +106,12 @@ window {
 .outline {
     padding: 0.4rem;
     background-color: $bg;
+}
+
+tooltip {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 9pt;
+    border: 2px solid $hover;
+    background-color: $bg;
+    border-radius: 0.25rem;
 }

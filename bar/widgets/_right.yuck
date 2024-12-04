@@ -1,5 +1,5 @@
 (defwidget battery-bar []
-    (box :class "battery-bar" :style "background-color: ${battery.color};"
+    (box :class "battery-bar" :style "background-color: ${battery.color};" :tooltip "Battery: ${battery.percentage}% (${battery.status})"
       (label :text "${battery.icon}")))
 
 (defwidget battery []
@@ -9,30 +9,34 @@
 )
 
 (defwidget network []
-    (button :onclick "" :class "cc-button"
-    (label :text "${network.icon}")))
+  (eventbox :onrightclick "nmtui" :cursor "pointer"
+    (button :onclick "" :class "cc-button" :tooltip "${network.status} - ${network.name}"
+    (label :text "${network.icon}"))))
 
 (defwidget bluetooth []
    (box :class "cc-button" :style "color: ${bluetooth.color};"
-    (button :onclick "" :class ""
+    (button :onclick "" :class "" :tooltip "Status: ${bluetooth.status}, Devices: ${bluetooth.devices}"
     (label :text "${bluetooth.icon}"))))
 
 (defwidget controlcenter []
+  (eventbox :onclick "" :cursor "pointer"
   (button :onclick "" :class ""
     (box :class "controlcenter" :orientation "h" :space-evenly false :halign "end" :valign "center"
       (bluetooth)
       (network)
-      (battery))))
+      (battery)))))
 
 (defwidget notification []
+  (eventbox :onclick "" :cursor "pointer"
   (box :class "notification"
     (button :onclick "" :class "button"
-    (label :text "󰂜"))))
+    (label :text "󰂜")))))
 
 (defwidget powerbutton []
+  (eventbox :onclick "" :cursor "pointer"
   (box :class "powerbutton"
     (button :onclick "" :class "button powerbutton"
-    (label :text "󰐥"))))
+    (label :text "󰐥")))))
 
 (defwidget time []
    (time))

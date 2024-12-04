@@ -1,11 +1,3 @@
-(defwidget time []
-   (time))
-
-(defwidget clock []
-  (box :class "clock" :orientation "h" :space-evenly true :halign "end" :valign "center"
-    (time)
-    (date)))
-
 (defwidget center []
-  (eventbox :onclick "./scripts/calendar.sh"
+  (eventbox :onclick "./scripts/calendar.sh" :cursor "pointer"
     (label :text "${time}" :class "center")))
