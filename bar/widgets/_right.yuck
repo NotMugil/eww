@@ -46,6 +46,54 @@
     (time)
     (date)))
 
+(defvar tray "true")
+
+(defwidget tray []
+    (box :class "tray" :space-evenly false
+        (revealer :reveal tray :transition "slideleft" :duration "300ms"
+        (systray :class "tray-box" :spacing 12 :orientation "h" :icon-size 14 :prepend-new true)
+        )
+        (button
+            :onclick "eww update tray=$([ \"$(eww get tray)\" = \"true\" ] && echo false || echo true)"
+            :class "tray-button"
+            (label :text "")
+        )
+    )
+)
+
+(defwidget playerctl []
+  (overlay
+    (box
+      :halign "fill"
+      :width 140
+      :class { pcover != "" ? "mpdcover" : "widget"}
+      :style "background: rgba(0,0,0,1), url('${pcover}');")
+
+    (box
+      :halign "fill"
+      :width 140
+      :class { pcover != "" ? "mpdcover" : "widget"}
+      :style "background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));"
+    )
+
+    (box
+      :class "widget"
+      :orientation "h"
+      :space-evenly false
+      :spacing 5
+      :halign "end"
+      :valign "center"
+      (eventbox
+        :onclick "${EWW_CMD} update reveal1=false reveal2=false reveal3=${!reveal3}"
+        (image :path { pcover == "" ? "./image/emptympd.png" : pcover } :image-width 30 :image-height 30 :style "padding: 0px 5px;"))
+      (button :onclick "playerctl previous"
+        (label :class "picon" :text "󰒮"))
+      (button :onclick "playerctl play-pause"
+        (label :class "picon" :text  { pstatus == "Playing" ? "" : "" }))
+      (button :onclick "playerctl next"
+        (label :class "picon" :text "󰒭"))
+      )))
+
 (defwidget controls []
   (box :class "controls" :orientation "h" :space-evenly false :spacing 0 :halign "end" :valign "center"
     (notification)
@@ -53,5 +101,7 @@
 
 (defwidget right []
   (box :class "" :orientation "h" :space-evenly false :spacing 1 :halign "end" :valign "center"
+    (playerctl)
+    (tray)
     (controlcenter)
     (controls)))

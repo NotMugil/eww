@@ -116,3 +116,28 @@ tooltip {
     background-color: $bg;
     border-radius: 0.25rem;
 }
+
+.tray {
+    margin: 0.5rem 0rem;
+    padding: 0rem 0.8rem;
+    border-radius: 0.25rem;
+    background-color: $muted;
+}
+
+.tray-box {
+    margin-right: 0.8rem;
+}
+
+.tray-button {
+    margin-right: 0.2rem;
+}
+
+.mpdcover,
+.widget {
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.widget {
+    margin: 0rem 1rem;
+}
