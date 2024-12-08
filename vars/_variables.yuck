@@ -3,8 +3,8 @@
 (defpoll bluetooth :interval "2s" `./scripts/bluetooth.sh`)
 (defpoll time :interval "60s" "date '+%B %d, %H:%M'")
 
-(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspaces")
-(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace")
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/workspace.sh")
+(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/active-workspace.sh")
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get-window-title")
 
 (defpoll day :interval "60s" "date '+%a'")

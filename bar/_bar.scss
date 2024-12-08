@@ -35,9 +35,10 @@ window {
 
 .battery-bar {
     color: $hover;
+    font-weight: 900;
     font-size: 7pt;
     margin: 0.3rem 0rem 0.3rem 0.4rem;
-    padding: 0px 1rem;
+    padding: 0px 0.3rem;
     border: 1px solid $fg-muted;
     border-radius: 0.25rem;
 }
