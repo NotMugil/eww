@@ -82,7 +82,7 @@
 
 (defwidget powerbutton []
     (eventbox
-        :onclick ""
+        :onclick "./scripts/powermenu.sh"
         :cursor "pointer"
         (box
             :class "powerbutton"
@@ -130,7 +130,7 @@
 
 (defwidget playerctl []
     (overlay
-        (eventbox :onclick "./scripts/player.sh"
+        (eventbox :onclick "${EWW_CMD} update player_show=true"
             (box
                 :halign "fill"
                 :width 140

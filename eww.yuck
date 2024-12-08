@@ -1,5 +1,6 @@
 ;; Common
 (include "./vars/_variables.yuck")
+(include "./vars/_closer.yuck")
 
 ;; Bar
 (include "./bar/widgets/_center.yuck")
@@ -12,3 +13,6 @@
 
 ;; Player
 (include "./player/_player.yuck")
+
+;; Powermenu
+(include "./powermenu/_powermenu.yuck")
