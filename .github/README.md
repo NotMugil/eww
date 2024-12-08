@@ -1,5 +1,5 @@
 # eww
-### stay away. 
+### stay away.
 
 ##### (Updated Dec 3)
 
@@ -7,4 +7,4 @@
 - **Widgets:** [eww](https://github.com/elkowar/eww)
 
 ## Preview
-![showcase](./assets/showcase.png)
+![showcase](./assets/showcase1.png)
