@@ -67,14 +67,14 @@
       :halign "fill"
       :width 140
       :class { pcover != "" ? "mpdcover" : "widget"}
-      :style "background: rgba(0,0,0,1), url('${pcover}');")
+      :style "background-image: url('${pcover}');")
 
     (box
       :halign "fill"
       :width 140
-      :class { pcover != "" ? "mpdcover" : "widget"}
-      :style "background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));"
-    )
+      :class { pcover != "" ? "mpdcover" : ""}
+      :style "background: ${pcover != '' ? 'linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7))' : 'transparent'};"
+   )
 
     (box
       :class "widget"
