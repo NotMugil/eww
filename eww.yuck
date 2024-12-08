@@ -9,3 +9,6 @@
 
 ;; Calendar
 (include "./calendar/_calendar.yuck")
+
+;; Player
+(include "./player/_player.yuck")
